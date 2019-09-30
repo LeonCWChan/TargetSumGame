@@ -19,14 +19,13 @@ class App extends React.Component {
   };
 
   render() {
-    alert(this.state.gameId)
     return (
       <Game
         key={this.state.gameId}
         onPlayAgain={this.resetGame}
         onNextPlay={this.nextGame}
         randomNumberCount={6}
-        initialSeconds={100}
+        initialSeconds={15}
         gameScore={this.state.score}
       />
     );
